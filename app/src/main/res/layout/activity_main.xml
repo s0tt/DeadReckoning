@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.so.fahrerinformationssysteme.MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/maps"
+            android:layout_width="match_parent"
+            android:layout_height="257dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/graph" />
+
+        <Button
+            android:id="@+id/csv_export"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:text="Collect CSV"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="525dp" />
+
+        <Button
+            android:id="@+id/csv_import"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:text="Load CSV"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="492dp" />
+
+        <Button
+            android:id="@+id/btn_gpsoff"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:background="#85f1a9"
+            android:text="GPS: On" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
